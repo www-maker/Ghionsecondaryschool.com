@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>Ghion secondary school</title>
+      <meta charset="UTF-8">
+    
+      <meta name="keywords" content="ghion, school, ghion school,educaton,ghion iberary, liberary online, online liberary, liberary, ghion school website, school,">
+      <meta name="description" content="welcome to Ghion  secondary school web page">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="refresh" content="30">
+      <style>
+      
+}
+.ha{
+  text-align: center;
+  color: ;
+  background-color: red;
+  color: white;
+}
+   .gh{
+       background-color: blue;
+    }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: ;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 15px;
+  background-color: ;
+  text-decoration: none;
+  border: 12px;
+}
+
+li a:hover:not(.active) {
+  background-color:black;
+}
+
+.active {
+  background-color:black;
+}
+.hj{
+  border-left: 20px;
+}
+body{
+  background-image: url(ghj.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+#hk{
+  position: fixed;
+  top: 5px;
+  left: 30px;
+  color: black;
+}
+#yyy{
+
+  background-color: black;
+  color: black;
+  position: fixed;
+  top: -45px;
+  height: 89px;
+  
+}
+#h{
+  font-family: sans-serif;
+  font-size: 38px;
+  text-align: center;
+  animation-direction:normal;
+  animation-duration: 1s;
+  animation-delay:2s ;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  margin-bottom: 58px;
+}
+#j{
+  color: black;
+  background-color: ;
+}
+#g{
+  background-color: white;
+  color: white;
+ width: 100%;
+ height: 100px;
+ position: fixed;
+ top: -40px;
+
+
+}
+#im{
+  position: fixed;
+  top: 4px;
+  right: 940px ;
+   border-radius: 2px;
+}
+$u{
+  font-size: 48px;
+}
+.header {
+  position: absolute;
+  top: 550px;
+  color: white;
+}
+
+}
+#blue{
+  background-size: 45px;
+  }
+  #ll{
+  top:560px;
+  }
+  .con{
+  display: inline-block;
+  font-family: "arial";
+  font-size: 24px;
+}
+  }
+  .typewrite{
+    text-align: center;
+    color: white;
+  }
+  
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</style>
+</head>
+<body>
+ 
+
+
+
+</style>
+</head>
+<body style="background-color: goldenrod;">
+
+<h2  id="blue" style="color: black;">Ghion secondary school</h2>
+  <ul  class="" style="position: fixed; top: 4px; right: 30px; padding: ;">
+   
+  <li><a class="active" href=index.html>Home</a></li>
+  <li><a href="quetions.html">Exam sheet</a></li>
+  <li><a href="liberary.html">Liberary</a></li>
+   <li><a href="Scholarship.html">Scholarship</a></li>
+  <li><a href="check result.html">Check Result </a> </li>
+  <li><a href="About.html">About us</a></li>
+  <li><a href="contact us.html">Contact us</a></li>
+  
+</ul>
+
+ <p id="h">Welcome To Ghion Secondary School</p>
+
+
+
+
+<ul id="j"  >
+</ul>
+<script>
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #FFFFFF}";
+        document.body.appendChild(css);
+    };
+    </script>
+    <h1 style="text-align: center; color: black;">
+    
+  <a href="" class="typewrite" data-period="2000" data-type='[ "hello students ", "welcome to Ghion secondary school web page.", " This Web Page Developed By.", "Grade 12 students." ]'>
+    <span class="wrap"></span>
+  </a>
+  
+</h1>
+<p style="color:black;background-color:white;margin-top:4px ;">የባህር ዳሩ ግዮን መሰናዶ ት/ቤት በተከታታይ 4 ቀን 1086 ከረጢት ደም በመሰብሰብ የራሱን የደም ልገሳ ሪከርድ ሰብሯል ነገ የመጨረሻ ቀን ይቀጥላል።</p>
+<p style="color:black;background-color:white;"> የባ/ዳር መሰናዶን 1228 የአገሪቱን ሪከርድ ሊሰብሩ ተቃርበዋል። የነገ ሰው ይበለን</p>
+<img src="blode 1.jpg" style="position:absolute;top: 205px;sdfbhfsdg">
+<img src="blode 2.jpg" style="position:absolute;top:205px;right:30px;">
+<h1 style="position:absolute; top:640px ; background-color;white:">Ghion secondary school 1992/1993 baches</h1>
+<img src="se.jpg" style="position: absolute; top:700px; ">
+    </body>
+
+
+<h1 id=">Ghion</h1>
